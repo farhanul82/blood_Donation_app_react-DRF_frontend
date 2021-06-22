@@ -1,38 +1,547 @@
-.App {
+:root {
+  --skin-color: #fb839e;
+  --bg-black--900: #000000;
+  --bg-black--100: #dddddd;
+  --bg-black--50: #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-300: #666666;
+  --text-black-600: #bbbbbb;
+
+  --outer-shadow: 3px 3px 3px #d0d0ed, inset -3px -3px -3px #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px -3px #f8f8f8;
+}
+
+/* ----------custom css variable for dark theme------ */
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--bg-black--50);
+}
+
+*:not(i) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.startImg {
+  position: fixed;
+  width: 12%;
+  margin-left: 400px;
+  margin-top: 124px;
+}
+.start-text {
+  position: fixed;
+  margin-top: 277px;
+  /* margin-right: 400px; */
+  margin-left: 365px;
+}
+
+.start-text h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.start-text h3 .span1 {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start-text h3 .span2 {
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.start_btn {
+  border: 1px solid;
+  position: fixed;
+  background: rgb(193 41 7);
+  margin-left: 374px;
+  margin-top: 334px;
+  border-radius: 41px;
+  width: 16%;
+  padding: 13px;
+  color: whitesmoke;
+}
+.navImgDIv {
+  width: 94px;
+}
+
+.navImg {
+  width: 44%;
+}
+
+/* ----login */
+.logInImg {
+  width: 18%;
+  margin-left: 185px;
+  margin-top: 170px;
+}
+
+.carousalItem {
+  width: 90%;
+  margin-left: 79px;
+}
+
+.carousaldiv ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list {
+  float: left;
+}
+
+.list img {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 92px;
+}
+
+.Campaign h1 {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.Menu {
+  text-align: center;
+  margin-top: 30px;
+}
+.card {
+  width: 16rem;
+  background: transparent;
+  margin-left: 48px;
+  border: none;
+}
+
+.cardImg {
+  border-radius: 50%;
+  width: 40%;
+  margin-left: 72px;
+  border: 2px solid darkred;
+}
+
+.cardText {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  margin-left: 74px;
+}
+
+.cardBadge {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.Requests {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*............. PROFILE.............. */
+
+.profileDIv {
+  background-color: white;
+  margin-top: 8px;
+  height: 80vh;
+  border-radius: 35px;
+}
+
+.profileimgDiv {
+  margin-top: 22px;
+  margin-left: 84px;
+  width: 250px;
+  height: 220px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px darkred;
+}
+
+.profileimgDiv img {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.editProfileBtn {
+  margin-top: 35px;
+  width: 50%;
+  margin-left: 145px;
+  background-color: rgb(172, 0, 0);
+  color: white;
+  border-radius: 25px;
+}
+
+.editProfileForm {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgb(13, 35, 45);
+
+  padding-top: 55px;
+}
+
+.profileimgDivimg {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 75px; */
+  position: relative;
+  object-fit: cover;
+}
+
+.profileList {
+  padding: 40px;
+  font-size: 22px;
+  color: #6b0f00;
+  font-weight: bold;
+}
+
+.gifDiv {
+  width: 55px;
+  position: absolute;
+  top: 300px;
+  left: 146px;
+}
+.gifDiv img {
+  width: 100%;
+}
+.bloodGroupDiv {
+  margin-left: 210px;
+  margin-top: 17px;
+}
+
+.bloodGroupDiv h1 {
+  color: darkred;
+  font-weight: bold;
+}
+
+.profileNameDiv {
+  margin-top: 260px;
+  /* margin-left: -14px; */
+  text-align: center;
+  width: 415px;
+}
+
+.profileInfoDiv {
+  background: #eff0f4;
+
+  border-bottom-left-radius: 56px;
+}
+.profileInfoDiv p {
+  padding: 25px;
+}
+
+.infoTag {
+  margin-top: 38px;
+}
+
+.editProfile {
+  position: absolute;
+  right: 24px;
+  top: 42px;
+  text-decoration: none;
+}
+
+.limitText {
+  margin-left: 35px;
+  margin-top: 22px;
+}
+
+.limitBadge {
+  margin-left: -32px;
+  margin-top: -9px;
+  width: 31px;
+  font-size: 26px;
+  color: whitesmoke;
+  background: darkred;
+}
+
+.editDonation {
+  margin-left: 118px;
+  text-decoration: solid;
+}
+
+.editDonationInfo {
+  background: rgb(13, 35, 45);
+  width: 28%;
+  padding: 23px;
+  margin-top: 108px;
+  border-radius: 30px;
+  position: fixed;
+}
+
+/* -----------login---------- */
+
+.loginInput {
+  width: 250px;
+  border-radius: 30px;
+}
+
+.loginGifDiv {
+  width: 140px;
+  position: absolute;
+  top: 90px;
+  left: 150px;
+}
+
+.login-text {
+  position: fixed;
+  margin-top: 240px;
+  /* margin-right: 400px; */
+  margin-left: 112px;
+}
+
+.login-text h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-text h3 .span1 {
+  color: rgb(172, 0, 0);
+  font-weight: bold;
+}
+
+.login-text h3 .span2 {
+  color: #000000;
+  font-weight: bold;
+}
+
+.loginBtn {
+  background-color: rgb(172, 0, 0);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ------signup------ */
+
+.signupBtn {
+  background-color: rgb(172, 0, 0);
+  color: white;
+  margin-left: 70px;
+  border-radius: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.donorHeadingDIV {
+  margin-top: 55px;
 }
+
+.donorHeadingDIV .tag1 {
+  font-size: 36px;
+}
+
+.donorHeadingDIV .tag2 {
+  margin-left: 115px;
+  font-size: 38px;
+}
+
+.donorHeadingDIV .tag3 {
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+
+.donorSearchBtn {
+  margin-left: 49px;
+  width: 135px;
+  border-radius: 20px;
+  background-color: rgb(172, 0, 0);
+  color: #bbbbbb;
+}
+
+/*  ------------- */
+
+.DonorSearchcard {
+  width: 18rem;
+  height: 280px;
+  position: absolute;
+  background: aqua;
+}
+
+.Donor_Search_card_img {
+  position: relative;
+  width: 100%;
+  height: 178px;
+  object-fit: contain;
+}
+
+.donorsSelectCity {
+  width: 55%;
+  border-radius: 30px;
+}
+
+.donorAreaSelect{
+  width: 55%;
+}
+
+.card {
+  position: relative;
+  width: 260px;
+}
+
+.card .friend_card_img {
+  position: relative;
+  max-width: 100%;
+  height: 178px;
+  object-fit: cover;
+}
+
+/* Donation_Info */
+
+.Donation_info_Div {
+  background: brown;
+  width: 90%;
+  padding: 18px;
+  color: white;
+}
+
+.frineds_card {
+  width: 18rem;
+  border: 1px solid;
+  margin: 20px;
+  box-shadow: 2px 2px 8px;
+}
+
+/* .postSection{
+  width: 42%;
+  margin-left: 265px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 2px 6px black;
+  margin-top: 25px;
+  margin-bottom: 5px;
+} */
+
+.postSection {
+  width: 100%;
+  max-width: 98rem;
+  padding: 5rem;
+  background: whitesmoke;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-radius: 0.8rem;
+  display: flex;
+}
+
+.post_img {
+  width: 45%;
+  height: 15rem;
+  transform: translateX(-8rem);
+  position: relative;
+}
+
+.post_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+
+.post_img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+}
+
+.post_date span {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6rem;
+  font-weight: 680;
+  margin: 0.5rem 0;
+}
+
+.postUserName {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #4facfe;
+}
+
+.post_Info {
+  width: 100%;
+  height: 258px;
+  margin-left: -95px;
+}
+
+.postCaption {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.addPostBtn {
+  border-radius: 25px;
+  width: 327px;
+  background: black;
+  text-decoration: none;
+  border: 1px solid;
+  margin-left: 290px;
+}
+
+.notImageDiv {
+  width: 19%;
+}
+
+.viewResponsBtn {
+  width: 24%;
+  height: 27px;
+  font-size: 16px;
+  border: 1px;
+  color: brown;
+}
+
+.commentImgDiv{
+  width: 10%;
+}
+
+.commentImgDiv img{
+  border-radius: 50%;
+}
+
+.commentDate{
+  margin-top: -19px;
+  font-size: 9px;
+}
+
+.commentUserNameDiv{
+  padding-left: 8px;
+}
+
+.commentDiv p{
+  margin-left: 62px;
+    margin-top: -14px;
+}
+
